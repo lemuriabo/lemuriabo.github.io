@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEMURIA Restaurante – Alta Gastronomía Consciente</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --lemuria-green: #3a5d4c;
+      --lemuria-gold: #c9a76d;
+      --lemuria-light: #f8f5f0;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: #333;
+    }
+
+    h1, h2, h3, h4, .brand {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--lemuria-light);
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: var(--lemuria-green);
+    }
+    .navbar-nav .nav-link {
+      color: #555;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+    .navbar-nav .nav-link:hover {
+      color: var(--lemuria-gold);
+    }
+
+    /* Hero */
+    #hero {
+      background: url('https://picsum.photos/seed/lemuria-hero/1600/900') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    #hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    #hero .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    #hero h1 {
+      font-size: 3.25rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    #hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 0;
+    }
+    .section-title {
+      margin-bottom: 3rem;
+    }
+
+    /* Filosofía */
+    .philosophy-img {
+      border-radius: 0.75rem;
+    }
+
+    /* Menú cards */
+    .menu-card img {
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+    }
+    .menu-card .card-body {
+      background-color: var(--lemuria-light);
+    }
+
+    /* Ambiente carousel */
+    #ambienteCarousel .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    /* Chef section */
+    .chef-photo {
+      max-width: 350px;
+      border-radius: 50%;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--lemuria-green);
+      color: #fff;
+      padding: 2.5rem 0;
+    }
+    footer a { color: var(--lemuria-gold); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand brand" href="#hero">LEMURIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#filosofia">Filosofía</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ambiente">Ambiente</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chef">Chef</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content text-white">
+      <h1 class="mb-3">Sabor Natural · Producto Local · Enfoque Holístico</h1>
+      <p class="lead">Alta gastronomía consciente en el corazón de La Paz</p>
+      <a href="#filosofia" class="btn btn-lg btn-light">Descubrir</a>
+    </div>
+  </header>
+
+  <!-- Filosofía Section -->
+  <section id="filosofia">
+    <div class="container">
+      <h2 class="section-title text-center">Concepto y Filosofía</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img class="img-fluid philosophy-img shadow" src="https://picsum.photos/seed/lemuria-philosophy/900/600" alt="Filosofía Lemuria">
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5">Lemuria es un homenaje a una tierra ancestral donde la vida y la siembra sucedían en armonía con la naturaleza. Creemos que la comida es energía vital: un puente entre lo nutritivo y lo espiritual.</p>
+          <ul>
+            <li><strong>Experiencia Integral:</strong> Más del 80% de nuestros comensales nos eligen por una vivencia gastronómica que trasciende lo culinario.</li>
+            <li><strong>Ingredientes Conscientes:</strong> Empleamos productos orgánicos y no convencionales, realzados con técnicas modernas como el ahumado.</li>
+            <li><strong>Visión Holística:</strong> Desde la selección hasta el manejo de residuos, cada acción busca equilibrio y bienestar integral.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menú Section -->
+  <section id="menu" class="bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Selección de Platos</h2>
+      <div class="row g-4">
+        <!-- Dish card template -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="https://picsum.photos/seed/anticucho/600/400" class="card-img-top" alt="Anticucho Vegetariano">
+            <div class="card-body">
+              <h5 class="card-title">Anticucho Vegetariano</h5>
+              <p class="card-text small">Un clásico reinventado con texturas ahumadas y adobos ancestrales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="https://picsum.photos/seed/risotto/600/400" class="card-img-top" alt="Risotto Andino">
+            <div class="card-body">
+              <h5 class="card-title">Risotto Andino</h5>
+              <p class="card-text small">Cocinado lentamente con hongos locales para un pronunciado sabor umami.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="https://picsum.photos/seed/piquemacho/600/400" class="card-img-top" alt="Piquemacho Verde">
+            <div class="card-body">
+              <h5 class="card-title">Piquemacho Verde</h5>
+              <p class="card-text small">Versión vegetal del icónico plato paceño, balanceado y vibrante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="https://picsum.photos/seed/fricase/600/400" class="card-img-top" alt="Fricasé de Hongos">
+            <div class="card-body">
+              <h5 class="card-title">Fricasé de Hongos</h5>
+              <p class="card-text small">Reconfortante y aromático, potencia el sabor umami con micelio local.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="https://picsum.photos/seed/mousse/600/400" class="card-img-top" alt="Mousse de Cacao y Sal">
+            <div class="card-body">
+              <h5 class="card-title">Mousse de Cacao y Sal</h5>
+              <p class="card-text small">Postre que fusiona notas dulces, saladas y amargas en armonía.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambiente Section -->
+  <section id="ambiente">
+    <div class="container">
+      <h2 class="section-title text-center">Ambiente</h2>
+    </div>
+    <div id="ambienteCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/seed/ambiente1/1600/500" class="d-block w-100" alt="Ambiente 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/seed/ambiente2/1600/500" class="d-block w-100" alt="Ambiente 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/seed/ambiente3/1600/500" class="d-block w-100" alt="Ambiente 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#ambienteCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#ambienteCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Chef Section -->
+  <section id="chef" class="bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestra Chef</h2>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="https://picsum.photos/seed/chef-alison/350/350" alt="Chef Alison Duchen" class="chef-photo shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3">Chef Alison Duchen</h3>
+          <p>Alison Duchen lidera la cocina de Lemuria con una pasión inquebrantable por la alimentación consciente. Su trayectoria fusiona técnicas contemporáneas con tradiciones bolivianas, resaltando la magia de los hongos y el poder del producto local.</p>
+          <p>Su filosofía culinaria gira en torno al sabor umami, texturas sorprendentes y una profunda conexión con la tierra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title text-center">Contacto y Reservas</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="fs-5 mb-2"><strong>Dirección:</strong> Av. Inofuentes, entre calles 21 y 22 de Calacoto, PB Torre 1555, La Paz, Bolivia</p>
+          <p class="fs-5 mb-2"><strong>Teléfono:</strong> +591 2 123 4567</p>
+          <p class="fs-5 mb-4"><strong>Email:</strong> reservas@lemuria.bo</p>
+          <a href="#" class="btn btn-lg btn-outline-success">Reservar Mesa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2">© <span id="year"></span> LEMURIA Restaurante · Alta Gastronomía Consciente</p>
+      <p>
+        <a href="#" class="me-3">Instagram</a>
+        <a href="#" class="me-3">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Update current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
