@@ -1,0 +1,5 @@
+artbox
+aubio >=0.4.9,<0.5
+numpy >=1.20,<2
+makim >=1.27
+moviepy <2

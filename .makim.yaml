@@ -1,0 +1,30 @@
+groups:
+  clean:
+    tasks:
+      tmp:
+        help: Clean unnecessary temporary files
+        backend: bash
+        run: |
+          rm -fr build/
+          rm -fr dist/
+          rm -fr .eggs/
+          rm -f .coverage
+          rm -fr htmlcov/
+          rm -fr .pytest_cache
+          rm -fr .ruff_cache
+          rm -fr .mypy_cache
+          rm -fr ./tests/smoke/logs/
+          find . -name '*.egg-info' -exec rm -fr {} +
+          find . -name '*.egg' -exec rm -f {} +
+          find . -name '*.pyc' -exec rm -f {} +
+          find . -name '__pycache__' -exec rm -fr {} +
+          find . -name '*.pyo' -exec rm -f {} +
+          find . -name '*~' -exec rm -f {} +
+
+  pages:
+    tasks:
+      preview:
+        help: Preview documentation page locally
+        run: python -m http.server
+
+  

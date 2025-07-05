@@ -1,0 +1,14 @@
+name: lemuria
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  - python 3.11.*
+  - pygobject
+  - cairo 1.18
+  - pycairo 1.25.1
+  - cmake
+  - numpy >=1.20,<2
+  - pip
+  - pip:
+    - -r requirements.txt
