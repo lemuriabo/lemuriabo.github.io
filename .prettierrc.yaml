@@ -1,0 +1,6 @@
+overrides:
+  - files: "*.{md,html,js,css}"
+    options:
+      parser: remark
+      proseWrap: always
+      printWidth: 80

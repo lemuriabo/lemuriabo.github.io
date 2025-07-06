@@ -26,5 +26,3 @@ groups:
       preview:
         help: Preview documentation page locally
         run: python -m http.server
-
-  

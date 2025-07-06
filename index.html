@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LEMURIA Restaurante – Alta Gastronomía Consciente</title>
+  <title>LEMURIA Restaurante – Alta Cocina Consciente</title>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -145,87 +149,175 @@
   <!-- Hero Section -->
   <header id="hero">
     <div class="hero-content text-white">
-      <h1 class="mb-3">Sabor Natural · Producto Local · Enfoque Holístico</h1>
-      <p class="lead">Alta gastronomía consciente en el corazón de La Paz</p>
+      <h1 class="mb-3">Pasión · Compromiso · Perseverancia</h1>
+      <p class="lead">Alta cocina consciente en la Zona Sur de La Paz</p>
       <a href="#filosofia" class="btn btn-lg btn-light">Descubrir</a>
     </div>
   </header>
 
-  <!-- Filosofía Section -->
-  <section id="filosofia">
+  <!-- Filosofía Section (mejorada para responsividad) -->
+  <section id="filosofia" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center">Concepto y Filosofía</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img class="img-fluid philosophy-img shadow" src="/static/images/logo.jpeg" alt="Filosofía Lemuria">
+      <h2 class="section-title text-center mb-4">Concepto y Filosofía</h2>
+
+      <!--
+        * col-12: imagen y texto se apilan en todas las pantallas pequeñas y medianas
+        * col-lg-6: se muestran lado a lado solo a partir de ≥992 px
+        * gy-4: separa verticalmente cuando están apilados
+      -->
+      <div class="row gy-4 align-items-center">
+        <div class="col-12 col-lg-6 text-center">
+          <img src="/static/images/logo.jpeg"
+              alt="Filosofía Lemuria"
+              class="img-fluid philosophy-img shadow">
         </div>
-        <div class="col-md-6">
-          <p class="fs-5">Lemuria rinde homenaje a una tierra ancestral donde la vida y la siembra sucedían en armonía con la naturaleza. Para nosotros la comida es energía vital: un puente entre lo nutritivo y lo espiritual.</p>
-          <ul>
-            <li><strong>Experiencia Integral:</strong> Más del 80 % de nuestros comensales nos eligen por una vivencia que trasciende lo gastronómico.</li>
-            <li><strong>Ingredientes Conscientes:</strong> Productos orgánicos y no convencionales, potenciados con técnicas como el ahumado y el poder umami de los hongos.</li>
-            <li><strong>Visión Holística:</strong> Desde la selección hasta el manejo de residuos, cada acción busca equilibrio y bienestar integral.</li>
-          </ul>
+
+        <div class="col-12 col-lg-6">
+          <p class="fs-5">
+            Se cree que <strong>Lemuria</strong> fue una tierra ancestral donde sus habitantes
+            vivían plenamente conectados consigo mismos y con la naturaleza,
+            alcanzando una elevada evolución espiritual. Ese legado permanece latente
+            en cada uno de nosotros como una sabiduría ancestral lista para despertar.
+          </p>
+          <p class="fs-5">
+            En Lemuria creamos <strong>experiencias culinarias</strong> que fusionan la alta
+            cocina vegetariana con la riqueza de los ingredientes locales. Priorizamos
+            productos frescos y de temporada, cultivados y elaborados por emprendedores
+            de nuestra comunidad.
+          </p>
+          <p class="fs-5 mb-0">
+            Mediante técnicas culinarias refinadas realzamos la versatilidad y el sabor
+            natural de cada ingrediente. Cada plato cuenta una historia que enlaza el
+            esfuerzo del productor con la creatividad de nuestra cocina.
+          </p>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Chef Section -->
-  <section id="chef" class="bg-light">
+  <section id="chef" class="bg-light py-5">
     <div class="container">
-      <h2 class="section-title text-center">Nuestra Chef Alison Duchen</h2>
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-4 text-center mb-4 mb-md-0">
-          <img src="/static/images/chef-alison-duchen.jpeg" alt="Alison Duchen" class="chef-photo shadow">
+      <h2 class="section-title text-center mb-4">Nuestra Chef Alison Duchen</h2>
+
+      <!--
+        * col-12: la imagen y el texto ocupan toda la fila en móviles y pantallas medianas
+        * col-lg-4 / col-lg-8: se muestran lado a lado solo a partir de ≥992 px
+        * gy-4: separación vertical cuando están apilados
+      -->
+      <div class="row gy-4 align-items-center">
+        <div class="col-12 col-lg-4 text-center">
+          <!-- img-fluid evita desbordes y mantiene proporción -->
+          <img src="/static/images/chef-alison-duchen.jpeg"
+              alt="Alison Duchen"
+              class="img-fluid chef-photo shadow">
         </div>
-        <div class="col-md-6">
-          <p>Alison Duchen lidera la cocina de Lemuria con una pasión inquebrantable por la alimentación consciente. Su trayectoria fusiona técnicas contemporáneas con tradiciones bolivianas, resaltando la magia de los hongos y el poder del producto local.</p>
-          <p>Su filosofía culinaria gira en torno al sabor umami, las texturas sorprendentes y una profunda conexión con la tierra.</p>
+
+        <div class="col-12 col-lg-8">
+          <p class="mb-3">
+            <strong>Pasión, compromiso y perseverancia</strong> definen a Alison Duchen,
+            joven chef belga-boliviana de 26 años, vegetariana y madre.
+            Titulada en Gastronomía y Pastelería por el
+            <em>Instituto Gastronómico de las Américas</em>, comparte el vegetarianismo y
+            el veganismo desde una perspectiva innovadora, demostrando la versatilidad de
+            los productos locales.
+          </p>
+          <p class="mb-0">
+            Su principal inspiración es su hijo de 4 años, por quien trabaja para
+            construir un futuro más sano y consciente. En Lemuria, fusiona la tradición
+            culinaria boliviana con técnicas de alta cocina consciente, destacando el
+            poder umami de los hongos y la frescura de los ingredientes de nuestra tierra.
+          </p>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Menú Section -->
   <section id="menu" class="bg-light">
     <div class="container">
-      <h2 class="section-title text-center">Nuestra Carta · Temporada Abril 2025</h2>
+      <h2 class="section-title text-center">Nuestra Carta</h2>
 
       <!-- Degustación -->
-      <div class="mb-5 text-center">
-        <h3 class="mb-3">Menú Degustación Lemuria · 6 Pasos</h3>
-        <p class="lead mb-1">Una selección de nuestros mejores platos, diseñada para descubrir la versatilidad de nuestra cocina consciente.</p>
-        <p class="fw-bold">Disponible únicamente bajo reserva · Bs 195 por persona</p>
-      </div>
+      <!-- Menú Degustación -->
+      <div class="row justify-content-center my-5" id="degustacion">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body p-4">
+              <!-- Título -->
+              <h3 class="card-title text-center mb-3">
+                Menú Degustación Lemuria · 6 Pasos
+              </h3>
 
-      <!-- Entradas -->
-      <h4 class="text-center mb-4">Entradas · Bs 40</h4>
-      <div class="row g-4 mb-5">
-        <div class="col-sm-6 col-lg-3">
-          <div class="card menu-card border-0 shadow h-100">
-            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Anticucho Vegetariano">
-            <div class="card-body">
-              <h5 class="card-title">Anticucho</h5>
-              <p class="card-text small">Hongos ahumados · Salsa de maní · Papa semilla</p>
+              <!-- Descripción -->
+              <p class="lead text-center">
+                Una experiencia en seis actos que celebra la estacionalidad y la alta cocina
+                vegetariana con productos locales cuidadosamente seleccionados.
+              </p>
+
+              <!-- Precio + condiciones -->
+              <div class="row align-items-center my-4">
+                <div class="col-md-4 text-center">
+                  <span class="display-6 fw-bold d-block">Bs 195</span>
+                  <small class="text-muted">por persona</small>
+                </div>
+
+                <div class="col-md-8">
+                  <p class="mb-2">
+                    <em>El menú es personal y se aplica a toda la mesa<sup>*</sup></em>
+                  </p>
+
+                  <!-- Maridajes sugeridos -->
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <i class="fa-solid fa-wine-glass me-2 text-secondary"></i>
+                      Tinto · Recomendación de la casa
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-wine-glass me-2 text-secondary"></i>
+                      Blanco · Notas florales y cítricas
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-wine-glass me-2 text-secondary"></i>
+                      Rosé · Ligero y fresco
+                    </li>
+                  </ul>
+
+                  <p class="small mt-2">
+                    Consulta la recomendación de temporada y precios por copa o botella.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+
+      <!-- Entradas -->
+      <h4 class="text-center mb-4">Entradas · Bs 40</h4>
+      <p class="text-center mb-4">
+        <i class="fa-solid fa-leaf" style="color:#3a5d4c;"></i>
+        Opción Vegana
+      </p>
+      <div class="row g-4 mb-5">
         <div class="col-sm-6 col-lg-3">
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Ceviche de Hongos">
             <div class="card-body">
-              <h5 class="card-title">Ceviche de Hongos</h5>
+              <h5 class="card-title">Ceviche de Hongos <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
               <p class="card-text small">Leche de tigre · Maracuyá · Cremoso de camote</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="card menu-card border-0 shadow h-100">
-            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Muhammara Pita">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Anticucho Vegetariano">
             <div class="card-body">
-              <h5 class="card-title">Muhammara Pita</h5>
-              <p class="card-text small">Pita Five Spice · Salsa Muhammara · Hongos salteados</p>
+              <h5 class="card-title">Anticucho <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">Hongos ahumados · Salsa de maní · Papa semilla</p>
             </div>
           </div>
         </div>
@@ -233,8 +325,26 @@
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Sopa de Maní">
             <div class="card-body">
-              <h5 class="card-title">Sopa de Maní</h5>
-              <p class="card-text small">Fondo de hongos y maní · Zanahoria &amp; habas ahumadas</p>
+              <h5 class="card-title">Sopa de Maní <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">Fondo de hongos y maní · Zanahoria &amp; habas ahumadas · Hongos Salteados</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Sopa de Maní">
+            <div class="card-body">
+              <h5 class="card-title">Armonía Mix <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">Mix de Lechugas · Manzanas encurtidas · Crema de Beterraga y Naranja · Crumble de Almendras y Pasas</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Muhammara Pita">
+            <div class="card-body">
+              <h5 class="card-title">Muhammara Pita <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">Pita Five Spice · Salsa Muhammara · Hongos salteados</p>
             </div>
           </div>
         </div>
@@ -242,22 +352,41 @@
 
       <!-- Platos Fuertes -->
       <h4 class="text-center mb-4">Platos Fuertes · Bs 60</h4>
+      <p class="text-center mb-4">
+        <i class="fa-solid fa-leaf" style="color:#3a5d4c;"></i>
+        Opción Vegana
+      </p>
       <div class="row g-4 mb-5">
         <div class="col-sm-6 col-lg-4">
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Risotto Ahumado">
             <div class="card-body">
-              <h5 class="card-title">Risotto Ahumado</h5>
-              <p class="card-text small">Hongos · Reducción de chicha · Yema curada</p>
+              <h5 class="card-title">Hongos Braseados <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">
+                Ostra Azul Cocinado directo al Fuego · Aligot de Coliflor Rostizada · Peras Encurtidas | Vegetales Ahumados
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="card menu-card border-0 shadow h-100">
-            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Pique Macho Vegetal">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Risotto Ahumado">
             <div class="card-body">
-              <h5 class="card-title">Pique Macho Verde</h5>
-              <p class="card-text small">Raíces &amp; verdes salteados · Hongos cítricos · Texturas crocantes</p>
+              <h5 class="card-title">Risotto Ahumado</h5>
+              <p class="card-text small">
+                Arroz Carnaroli · Calabacines Grillados · Hongos · Yema Curada
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Risotto Ahumado">
+            <div class="card-body">
+              <h5 class="card-title">Naturaleza Crunchy <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">
+                Raíces y Mix de Verdes salteados · Hongos en Reducción de Cítricos · Texturas Crocantes
+              </p>
             </div>
           </div>
         </div>
@@ -265,8 +394,22 @@
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Fricasé de Hongos">
             <div class="card-body">
-              <h5 class="card-title">Fricasé de Hongos</h5>
-              <p class="card-text small">Caldo de ají · Papa semilla · Vegetales ahumados</p>
+              <h5 class="card-title">Fricasé de Hongos <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">
+                Mix de Hongos · Granos de Choclo · Caldo de Ají
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Pique Macho Vegetal">
+            <div class="card-body">
+              <h5 class="card-title">Pique Macho</h5>
+              <p class="card-text small">
+                Hongos · Reducción de Chicha · Salchicha de Tarwi · Huevo de Codorniz Marinado · Papa Semilla
+              </p>
             </div>
           </div>
         </div>
@@ -274,40 +417,49 @@
 
       <!-- Postres -->
       <h4 class="text-center mb-4">Postres · Bs 38</h4>
+      <p class="text-center mb-4">
+        <i class="fa-solid fa-leaf" style="color:#3a5d4c;"></i>
+        Opción Vegana
+      </p>
       <div class="row g-4 mb-5">
-        <div class="col-sm-6 col-lg-3">
-          <div class="card menu-card border-0 shadow h-100">
-            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Mousse Amazónico">
-            <div class="card-body">
-              <h5 class="card-title">Mousse Amazónico</h5>
-              <p class="card-text small">Chocolate &amp; almendras amazónicas · Sal rosada</p>
-            </div>
-          </div>
-        </div>
         <div class="col-sm-6 col-lg-3">
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Funghi Dulce">
             <div class="card-body">
-              <h5 class="card-title">Funghi</h5>
-              <p class="card-text small">Hongo tempura dulce · Crema de vino tinto · Vainilla</p>
+              <h5 class="card-title">Funghi  <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">Hongo en tempura dulce y especiada · Crumble de Vainilla · Crema de vino tinto</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="card menu-card border-0 shadow h-100">
-            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Pastel de Zanahoria">
-            <div class="card-body">
-              <h5 class="card-title">Pastel de Zanahoria</h5>
-              <p class="card-text small">Bizcocho especiado · Crema de maní tostado · Zanahorias en almíbar</p>
-            </div>
-          </div>
-        </div>
+
         <div class="col-sm-6 col-lg-3">
           <div class="card menu-card border-0 shadow h-100">
             <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Misk’i">
             <div class="card-body">
               <h5 class="card-title">Misk’i</h5>
-              <p class="card-text small">Bavaroise de caramelo salado · Compota de manzana · Crumble de canela</p>
+              <p class="card-text small">Bavaroise de caramelo salado · Crumble de canela · Compota de manzana</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Mousse Amazónico">
+            <div class="card-body">
+              <h5 class="card-title">Mousse Amazónico</h5>
+              <p class="card-text small">Chocolate y almendras amazónicas · Sal rosada Crumble de Cacao · Frutillas Asadas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="card menu-card border-0 shadow h-100">
+            <img src="/static/images/comidas/anticucho.png" class="card-img-top" alt="Pastel de Zanahoria">
+            <div class="card-body">
+              <h5 class="card-title">Pastel de Zanahoria  <i class="fa-solid fa-leaf ms-2" style="color:#3a5d4c;"></i></h5>
+              <p class="card-text small">
+                Bizcocho de Zanahoria Especiada · Crema de Maní Tostado · Zanahorias en Almíbar
+              </p>
             </div>
           </div>
         </div>
@@ -316,10 +468,10 @@
       <p class="text-center small fst-italic">*Opciones veganas disponibles · Precios sujetos a cambios sin previo aviso</p>
 
       <p class="text-center small">
-        <a href="/static/docs/Carta Temporada abril 2025.pdf" target="_blank" 
-          class="btn btn-lg btn-success">Download Nuestro Menú</a>
+        <a href="/static/docs/Carta Temporada abril 2025.pdf" target="_blank" class="btn btn-lg btn-success">Descargar Nuestro Menú</a>
       </p>
     </div>
+
   </section>
 
   <!-- Experiencias Section -->
@@ -363,16 +515,16 @@
           <img src="static/images/ambientes/ambiente3.jpeg" class="d-block w-100" alt="Ambiente 3">
         </div>
         <div class="carousel-item">
-          <img src="static/images/ambientes/ambiente4.jpeg" class="d-block w-100" alt="Ambiente 3">
+          <img src="static/images/ambientes/ambiente4.jpeg" class="d-block w-100" alt="Ambiente 4">
         </div>
         <div class="carousel-item">
-          <img src="static/images/ambientes/ambiente5.jpeg" class="d-block w-100" alt="Ambiente 3">
+          <img src="static/images/ambientes/ambiente5.jpeg" class="d-block w-100" alt="Ambiente 5">
         </div>
         <div class="carousel-item">
-          <img src="static/images/ambientes/ambiente6.jpeg" class="d-block w-100" alt="Ambiente 3">
+          <img src="static/images/ambientes/ambiente6.jpeg" class="d-block w-100" alt="Ambiente 6">
         </div>
         <div class="carousel-item">
-          <img src="static/images/ambientes/ambiente7.jpeg" class="d-block w-100" alt="Ambiente 3">
+          <img src="static/images/ambientes/ambiente7.jpeg" class="d-block w-100" alt="Ambiente 7">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#ambienteCarousel" data-bs-slide="prev">
@@ -386,23 +538,66 @@
     </div>
   </section>
 
-  <!-- Contacto Section -->
-  <section id="contacto">
+  <!-- Contacto & Reservas -->
+  <section id="contacto" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center">Contacto &amp; Reservas</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-left">
-          <p class="fs-5 mb-2"><strong>Dirección:</strong> Av. Inofuentes, entre calles 21 y 22 de Calacoto, PB Torre 1555, La Paz – Bolivia</p>
-          <p class="fs-5 mb-2"><strong>Teléfono:</strong>
-            <a href="https://walink.co/080cb4">+591 2 123 4567</a></p>
-          <p class="fs-5 mb-4"><strong>Email:</strong>
-            <a href="lemuriarestaurante@gmail.com">lemuriarestaurante@gmail.com</a></p>
-        </div>
-        <div class="col-md-8 text-center">
-          <a href="https://walink.co/080cb4" class="btn btn-lg btn-outline-success">Reservar Mesa</a>
+      <h2 class="section-title text-center mb-4">Contacto &amp; Reservas</h2>
+
+      <div class="card border-0 shadow-lg">
+        <div class="card-body p-4">
+          <div class="row gy-4">
+            <!-- Datos de contacto -->
+            <div class="col-md-6">
+              <h5 class="mb-3">Visítanos</h5>
+              <p class="mb-2">
+                <a href="https://maps.app.goo.gl/56r2jeh5VQQ2bqQ69" target="_blank" class="text-decoration-none">
+                  <i class="fa-solid fa-location-dot me-2 text-success"></i>
+                  Calacoto, Av. Inofuentes, entre calle 21 y 22,
+                  Planta Baja · Torre 1555 · La Paz, Bolivia
+                </a>
+              </p>
+              <p class="mb-2">
+                <i class="fa-solid fa-phone me-2 text-success"></i>
+                <a href="https://walink.co/080cb4" target="_blank"  class="text-decoration-none">+591&nbsp;6250&nbsp;0855</a>
+              </p>
+              <p class="mb-0">
+                <i class="fa-solid fa-envelope me-2 text-success"></i>
+                <a href="mailto:lemuriarestaurante@gmail.com" target="_blank" class="text-decoration-none">
+                  lemuriarestaurante@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <!-- Horarios -->
+            <div class="col-md-6">
+              <h5 class="mb-3">Horarios de Atención</h5>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between border-bottom py-1">
+                  <span>Domingo</span><span>12:00–15:30 · 18:30–21:30</span>
+                </li>
+                <li class="d-flex justify-content-between border-bottom py-1">
+                  <span>Martes&nbsp;a&nbsp;Viernes</span><span>12:00–15:00 · 18:30–22:00</span>
+                </li>
+                <li class="d-flex justify-content-between border-bottom py-1">
+                  <span>Sábado</span><span>12:00–15:30 · 18:30–22:00</span>
+                </li>
+                <li class="d-flex justify-content-between py-1">
+                  <span>Lunes</span><span class="text-danger">Cerrado</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Botón de reserva -->
+          <div class="text-center pt-4">
+            <a href="https://walink.co/080cb4" class="btn btn-lg btn-success px-5">
+              Reservar Mesa
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- Footer -->
