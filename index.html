@@ -155,79 +155,97 @@
     </div>
   </header>
 
-  <!-- Filosofía Section (mejorada para responsividad) -->
-  <section id="filosofia" class="py-5">
+  <!-- 1 ▸ CONCEPTO & FILOSOFÍA --------------------------------------------->
+  <section id="filosofia" class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Concepto y Filosofía</h2>
-
-      <!--
-        * col-12: imagen y texto se apilan en todas las pantallas pequeñas y medianas
-        * col-lg-6: se muestran lado a lado solo a partir de ≥992 px
-        * gy-4: separa verticalmente cuando están apilados
-      -->
-      <div class="row gy-4 align-items-center">
-        <div class="col-12 col-lg-6 text-center">
+      <div class="row gy-5 align-items-center">
+        <!-- Imagen: se muestra arriba en móviles, a la izquierda en ≥ lg -->
+        <div class="col-12 col-lg-5 text-center">
           <img src="/static/images/logo.jpeg"
               alt="Filosofía Lemuria"
-              class="img-fluid philosophy-img shadow">
+              class="img-fluid philosophy-img shadow-lg">
         </div>
 
-        <div class="col-12 col-lg-6">
-          <p class="fs-5">
+        <!-- Texto -->
+        <div class="col-12 col-lg-7">
+          <h2 class="section-title mb-3">Concepto&nbsp;y&nbsp;Filosofía</h2>
+
+          <!-- Frase destacada -->
+          <blockquote class="fs-5 fst-italic border-start border-4 ps-3 mb-4"
+                      style="border-color:#3a5d4c">
+            «Despertamos la sabiduría ancestral a través de cada bocado».
+          </blockquote>
+
+          <!-- Narrativa principal -->
+          <p class="mb-4">
             Se cree que <strong>Lemuria</strong> fue una tierra ancestral donde sus habitantes
-            vivían plenamente conectados consigo mismos y con la naturaleza,
-            alcanzando una elevada evolución espiritual. Ese legado permanece latente
-            en cada uno de nosotros como una sabiduría ancestral lista para despertar.
+            vivían plenamente conectados con la naturaleza y con su esencia espiritual.
+            Ese legado permanece latente en cada uno de nosotros como una semilla de
+            conocimiento lista para florecer.
           </p>
-          <p class="fs-5">
-            En Lemuria creamos <strong>experiencias culinarias</strong> que fusionan la alta
-            cocina vegetariana con la riqueza de los ingredientes locales. Priorizamos
-            productos frescos y de temporada, cultivados y elaborados por emprendedores
-            de nuestra comunidad.
-          </p>
-          <p class="fs-5 mb-0">
-            Mediante técnicas culinarias refinadas realzamos la versatilidad y el sabor
-            natural de cada ingrediente. Cada plato cuenta una historia que enlaza el
-            esfuerzo del productor con la creatividad de nuestra cocina.
-          </p>
+
+          <!-- Tres pilares (icon + texto) -->
+          <div class="row text-center text-lg-start">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <i class="fa-solid fa-seedling fa-2x mb-2 text-success"></i>
+              <h6 class="fw-bold">Producto Local</h6>
+              <p class="small mb-0">Ingredientes frescos y de temporada cultivados por
+                emprendedores de nuestra comunidad.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+              <i class="fa-solid fa-utensils fa-2x mb-2 text-success"></i>
+              <h6 class="fw-bold">Alta Cocina Consciente</h6>
+              <p class="small mb-0">Técnicas refinadas que exaltan la versatilidad y el
+                sabor natural de cada ingrediente.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <i class="fa-solid fa-heart fa-2x mb-2 text-success"></i>
+              <h6 class="fw-bold">Experiencia Holística</h6>
+              <p class="small mb-0">Cada plato cuenta la historia que une al productor
+                con la creatividad de nuestra cocina.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
   </section>
 
-  <!-- Chef Section -->
-  <section id="chef" class="bg-light py-5">
+  <!-- 2 ▸ NUESTRA CHEF ------------------------------------------------------>
+  <section id="chef" class="py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-4">Nuestra Chef Alison Duchen</h2>
-
-      <!--
-        * col-12: la imagen y el texto ocupan toda la fila en móviles y pantallas medianas
-        * col-lg-4 / col-lg-8: se muestran lado a lado solo a partir de ≥992 px
-        * gy-4: separación vertical cuando están apilados
-      -->
-      <div class="row gy-4 align-items-center">
-        <div class="col-12 col-lg-4 text-center">
-          <!-- img-fluid evita desbordes y mantiene proporción -->
+      <div class="row gy-5 align-items-center">
+        <!-- Imagen: se muestra arriba en móviles, a la derecha en ≥ lg -->
+        <div class="col-12 col-lg-5 order-lg-2 text-center">
           <img src="/static/images/chef-alison-duchen.jpeg"
-              alt="Alison Duchen"
-              class="img-fluid chef-photo shadow">
+              alt="Chef Alison Duchen"
+              class="img-fluid rounded-4 shadow-lg">
         </div>
 
-        <div class="col-12 col-lg-8">
+        <!-- Texto -->
+        <div class="col-12 col-lg-7 order-lg-1">
+          <h2 class="section-title mb-3">Chef&nbsp;Alison&nbsp;Duchen</h2>
+
+          <!-- Tres valores en badges -->
           <p class="mb-3">
-            <strong>Pasión, compromiso y perseverancia</strong> definen a Alison Duchen,
-            joven chef belga-boliviana de 26 años, vegetariana y madre.
-            Titulada en Gastronomía y Pastelería por el
-            <em>Instituto Gastronómico de las Américas</em>, comparte el vegetarianismo y
-            el veganismo desde una perspectiva innovadora, demostrando la versatilidad de
-            los productos locales.
+            <span class="badge rounded-pill text-bg-success me-2">Pasión</span>
+            <span class="badge rounded-pill text-bg-success me-2">Compromiso</span>
+            <span class="badge rounded-pill text-bg-success">Perseverancia</span>
           </p>
+
+          <p class="mb-3">
+            Joven chef belga-boliviana de 26&nbsp;años, vegetariana y madre,
+            formada en Gastronomía y Pastelería por el
+            <em>Instituto&nbsp;Gastronómico&nbsp;de&nbsp;las&nbsp;Américas</em>.
+            Alison comparte el vegetarianismo y el veganismo desde una
+            perspectiva innovadora, demostrando la versatilidad de los
+            productos locales.
+          </p>
+
           <p class="mb-0">
-            Su principal inspiración es su hijo de 4 años, por quien trabaja para
-            construir un futuro más sano y consciente. En Lemuria, fusiona la tradición
-            culinaria boliviana con técnicas de alta cocina consciente, destacando el
-            poder umami de los hongos y la frescura de los ingredientes de nuestra tierra.
+            Inspirada por su hijo de 4&nbsp;años, trabaja para construir un futuro
+            más sano y consciente. En Lemuria fusiona la tradición culinaria
+            boliviana con técnicas de alta cocina, destacando la frescura de nuestra tierra.
           </p>
         </div>
       </div>
@@ -254,7 +272,7 @@
               <!-- Descripción -->
               <p class="lead text-center">
                 Una experiencia en seis actos que celebra la estacionalidad y la alta cocina
-                vegetariana con productos locales cuidadosamente seleccionados.
+                consciente con productos locales cuidadosamente seleccionados.
               </p>
 
               <!-- Precio + condiciones -->
